@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linear Regression (Strong)</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container py-4">
+        <h1 class="text-center mb-4">Linear Regression (Strong)</h1>
+
+        <!-- Display Images -->
+        <div class="row">
+            <div class="col-md-6">
+                <h3>ANOVA Table</h3>
+                <img src="{{ url_for('static', filename='charts/linear/strong_anova.png') }}" alt="ANOVA Table" class="img-fluid">
+            </div>
+            <div class="col-md-6">
+                <h3>Truck ID vs. % Full Data</h3>
+                <img src="{{ url_for('static', filename='charts/linear/strong_data.png') }}" alt="Data Table" class="img-fluid">
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-md-6">
+                <h3>Truck_ID Line Fit Plot</h3>
+                <img src="{{ url_for('static', filename='charts/linear/strong_line_fit.png') }}" alt="Line Fit Plot" class="img-fluid">
+            </div>
+            <div class="col-md-6">
+                <h3>Regression Statistics Summary</h3>
+                <img src="{{ url_for('static', filename='charts/linear/strong_stats.png') }}" alt="Regression Statistics" class="img-fluid">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

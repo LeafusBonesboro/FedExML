@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiple Regression</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container py-4">
+        <h1 class="text-center mb-4">Multiple Regression</h1>
+
+        <!-- Display ANOVA Table -->
+        <div class="row">
+            <div class="col-md-12">
+                <h3>ANOVA Table</h3>
+                <img src="{{ url_for('static', filename='charts/multi/multi_anova.png') }}" alt="ANOVA Table" class="img-fluid">
+            </div>
+        </div>
+
+        <!-- Display Data Tables -->
+        <div class="row mt-4">
+            <div class="col-md-4">
+                <h3>Data Table 1</h3>
+                <img src="{{ url_for('static', filename='charts/multi/data1.png') }}" alt="Data Table 1" class="img-fluid">
+            </div>
+            <div class="col-md-4">
+                <h3>Data Table 2</h3>
+                <img src="{{ url_for('static', filename='charts/multi/multidata2.png') }}" alt="Data Table 2" class="img-fluid">
+            </div>
+            <div class="col-md-4">
+                <h3>Data Table 3</h3>
+                <img src="{{ url_for('static', filename='charts/multi/multi_data3.png') }}" alt="Data Table 3" class="img-fluid">
+            </div>
+        </div>
+
+        <!-- Display Fill Line Plot -->
+        <div class="row mt-4">
+            <div class="col-md-12">
+                <h3>Fill Line Plot</h3>
+                <img src="{{ url_for('static', filename='charts/multi/multi_fill_line.png') }}" alt="Fill Line Plot" class="img-fluid">
+            </div>
+        </div>
+
+        <!-- Display Regression Statistics Summary -->
+        <div class="row mt-4">
+            <div class="col-md-12">
+                <h3>Regression Statistics Summary</h3>
+                <img src="{{ url_for('static', filename='charts/multi/multi_stats.png') }}" alt="Regression Statistics Summary" class="img-fluid">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
