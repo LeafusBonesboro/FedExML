@@ -9,7 +9,7 @@ register_blueprints(app)
 
 @app.route('/')
 def home():
-    return render_template('index.html')  # Render the index.html template
+    return render_template('home.html')  # Render the index.html template
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=8080)
+    app.run(debug=True, host='0.0.0.0', port=8080)
